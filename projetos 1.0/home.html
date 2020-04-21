@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/gallery.theme.css">
+<link rel="stylesheet" href="css/gallery.min.css">
+<title>Projeto Haken</title>
+<html lang="pt">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1;
+}
+
+
+.column {
+  float: left;
+  padding: 30px;
+}
+
+.column.padrao {
+  width: 33%;
+}
+
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+#titulo{
+  position: absolute;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  left: 130px;
+  top: 30px;
+}
+
+#teste{
+  position: absolute;
+  font-size: 60px;
+  left: 1005px;
+  top: 30px;
+}
+
+#teste2{
+  position: absolute;
+  font-size: 60px;
+  left: 1070px;
+  top: 30px;
+}
+
+#teste3{
+  position: absolute;
+  font-size: 60px;
+  left: 1135px;
+  top: 30px;
+}
+
+#teste4{
+  position: absolute;
+  font-size: 60px;
+  left: 1200px;
+  top: 30px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #adadad;
+  background-color: #f3f3f30a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: rgb(7, 7, 7);
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 159px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 1px solid #adadad;
+
+}
+
+footer2 {
+  background-color: rgb(255, 255, 255);
+  padding: 1px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 1px solid #adadad;
+
+}
+
+#slide{
+  position: absolute;
+  font-size: 100px;
+  left: 100px;
+  top: 170px;
+}
+
+#botaoslide{
+  position: absolute;
+  font-size: 60px;
+  left: 570px;
+  top: 700px;
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+
+<title>McGill Potography</title>
+</style>
+</head>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+</style>
+<body>
+
+
+<div class="w3-content" style="max-width:800px">
+  <label id="slide">
+  <img class="mySlides" src="i1.png"  width="1080" height="660">
+  <img class="mySlides" src="i2.png"  width="1080" height="660">
+  <img class="mySlides" src="i3.png"  width="1080" height="660">
+  <img class="mySlides" src="i4.png"  width="1080" height="660">
+  <img class="mySlides" src="i5.png"  width="1080" height="660">
+</label>
+</div>
+
+<div class="w3-center">
+  <label id="botaoslide">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ </button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)"> ❯</button>
+  </div>
+</label>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+ 
+}
+</script>
+
+</body>
+</html>
+
+  <header class="menu-principal"></header>
+    <div class="logo">
+      <img src="logo.png" width="120" height="120 />
+    </div>
+    
+<div class="header">
+  <label id="titulo">W&M Potography </label>
+</div>
+
+<div class="header"><label id="teste">
+  <a href="facebook.com"><img src="facebook.png" width="45" height="45"></a>
+</label></div>
+
+<div class="header"><label id="teste2">
+  <a href="instagram.com"><img src="instagram.png" width="45" height="45"></a>
+</label></div>
+
+<div class="header"><label id="teste3">
+  <a href="twitter.com"><img src="twitter.png" width="45" height="45"></a>
+</label></div>
+
+<div class="header"><label id="teste4">
+  <a href="youtube.com"><img src="youtube.png" width="45" height="45"></a>
+</label></div>
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="Projetos.html" target="_blank">Projetos</a></li>
+</ul>
+  
+  <div class="banner"></div>
+
+<footer>
+  <p></p>
+
+
+</footer>
+
+<div class="row">
+  <div class="column padrao">
+    <h3>SOBRE NÓS:</h3>
+    <img src="grupo.png" width="320" height="170" />
+    <p>Fundada em 2004 por José Lima. 
+      Somos uma empresa de fotografia que tem como principal lema a inovação, ao mesmo tempo que buscamos inspiração em grandes nomes da fotografia. 
+      Pois, afinal, o que importa é guardar os melhores momentos da vida em fotos que são uma verdadeira obra de arte.
+      </p>
+  </div>
+  
+  <div class="column padrao">
+    <h3>SERVIÇOS:</h3>
+    <img src="fotografia.png" width="320" height="170" />
+    <p>Trabalhamos com diversos conteúdos relacionados a fotografia. 
+      Executamos serviços de cinematografia,publicidade, eventos familiares e públicos. 
+      Tudo isso, com a utilização dos melhores equipamentos do mercado e com os melhores profissionais, com a execução de trabalhos de qualidade.
+    </p>
+  </div>
+  
+<div class="column padrao">
+    <h3>VIAGENS:</h3>
+    <img src="cuba.jpg" width="320" height="170" />
+    <p>A solicitação para os nossos serviços podem ser feitas de qualquer lugar e a qualquer momento.
+      Fotografamos aonde foi solicitado. Arcamos totalmente com os gastos ocasionados pelo transporte do nosso equipamentos.
+      Fica a par do cliente apenas o gasto com os nossos serviços de fotografia.
+    </p>
+  </div>
+</div>
+    </footer>
+
+
+<footer2> 
+    <div class="container body-content">
+      "Compartilhe os grandes momentos da sua vida! Utilize-se da fotografia."
+      <footer2 class="fixarRodape">
+          <hr />
+          <p>&copy; W&M Potography </p>
+          <p>&copy; FONE: (44) 99238-2345 </p>
+          <p>&copy; FONE: (44) 12345-6789 </p>
+</footer2>
+
+
+</div>
+
+</body>
+</html>

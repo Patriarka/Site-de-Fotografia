@@ -1,0 +1,21 @@
+.banner {
+    width: 1280px;
+    height: 350px;
+    margin: 0 auto;
+    animation: slide 30s infinite;
+}
+
+@keyframes slide {
+    0% , 30% {
+        background-image: url();
+    } 
+
+    40%, 65% {
+        background-image: url();
+    }
+
+    75%, 100% {
+        background-image: url();
+
+    }
+}

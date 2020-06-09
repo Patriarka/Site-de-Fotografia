@@ -1,0 +1,85 @@
+body {
+    background-color: beige;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    background: #24292e;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 5rem;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+}
+
+header .logo h1 {
+    font-family: Oswald;
+    color: white;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    position: relative;
+    top: 12px;
+    left: 40px;
+}
+
+header .logo img {
+    max-width: 80px;
+    max-height: 60px;
+
+    position: relative;
+    left: 20px;
+}
+
+header .menu {
+    position: relative;
+    left: 72vh;
+}
+
+header .menu .itens {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    top: 32px;
+}
+
+header .menu a {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: bolder;
+    
+    color: rgb(255, 255, 255);
+    
+    list-style: none;
+    text-decoration: none;
+}
+ 
+header .menu img {
+    max-width: 40px;
+    max-height: 40px;
+
+    position: relative;
+    left: 24vw;
+}
+
+header .menu .contato a {
+    position: relative;
+    left: 24vw;
+    bottom: 11px;
+}
+
+

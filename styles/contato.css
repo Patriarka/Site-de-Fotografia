@@ -11,7 +11,7 @@ html, body {
     grid-template-rows: 10vh 8vh 80vh 16vh;
     grid-template-areas: "h h"
                          "msg msg"
-                         "m a"
+                         "m m"
                          "f f"
 }
 
@@ -91,40 +91,61 @@ header .contato img {
 }
 
 main {
-    background: #1d1d1f;
-    grid-area: m;  
+    background: #1d1d1f18;
+    grid-area: m; 
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 80vh 80vh 80vh;
+    grid-template-areas: "esquerda meio direita";
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+main .esquerda {
+    grid-area: esquerda;
+}
+
+main .direita {
+    grid-area: direita; 
+}
+
+main .meio {
+    grid-area: meio; 
+
+    background: url('https://www.artesolucoes.com.br/images/img-site/contato.png') no-repeat 95% 95%;
+
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-main img {
-    width: 100%;
-    height: 100%;
+main .meio form {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", sans-serif;
+    font-size: 14px;
 }
 
-aside {
-    background: #636363;
-    grid-area: a;  
-    border-left: 7px solid #FFFFFF;
-}
-
-aside img {
-    width: 100%;
-    height: 50%;
-    -moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-aside img:hover {
-    -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.99);
-    transform: scale(1.03);
+main .meio form input {
+    margin: 5px;
     
-    border: 1px solid f00;
-    opacity:1;
-    -moz-opacity:1;
-    filter:alpha(opacity=100);
+    border: .1px solid black;
+
+    background: #cccccc; 
+    width:300px;
+    height: 20px;
+}
+
+main .meio .comunicado input {
+    height: 60px;
+}  
+
+main .meio form button {
+    background-color: #45b33e;
+    
+    color: white;
+    font-weight: bolder;
+
+    border: none;
+    width: 100%;;
+    height: 40px;
 }
 
 footer {
@@ -151,18 +172,3 @@ footer p {
 footer p + div {
     margin-left: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

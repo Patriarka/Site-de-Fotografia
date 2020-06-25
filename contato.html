@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Home</title>
+    <title>Sobre</title>
 
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/contato.css">
 </head>
 
 <body>
@@ -40,7 +38,6 @@
                     </li>
                 </ul>
             </nav>
-
         </header>
 
         <div class="msg">
@@ -48,15 +45,41 @@
         </div>
 
         <main>
-            <img src="https://images.unsplash.com/photo-1498910265115-9fb541931cd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=789&q=80" alt="foto-principal">
+            <div class="esquerda"></div>
+
+            <div class="meio">
+                <form>
+                    <p>
+                        <label for="nome"> Nome:</label><br>
+                        <input required type="text" id="nome" name="nome">
+                    </p>
+                    
+                    <p>
+                        <label for="email"> Email:</label><br>
+                        <input required type="email" id="email" name="email" placeholder="usuario@exemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="telefone"> Telefone:</label><br>
+                        <input required type="text" id="telefone" name="telefone" placeholder="44999999999">
+                    </p>
+                    <p>
+                        <label for="pais"> País:</label><br>
+                        <input required type="text" id="pais" name="pais">
+                    </p>
+                    <p class="comunicado">
+                        <label for="comunicado"> Comunicado:</label><br>
+                        <input required type="text" id="comunicado" name="comunicado" placeholder="Escreva sua mensagem">
+                    </p>
+                
+                    <button type="submit">Confirmar</button>
+                </form>
+            </div>
+
+            <div class="esquerda"></div>
         </main>
 
-        <aside>
-            <img src="https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="foto01" width="400" height="200">
-            <img src="https://images.unsplash.com/photo-1545475317-6a7314fded24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="foto02" width="400" height="200">
-        </aside>
-
-        <footer>
+         <footer> 
             <p>
                 @Copyright 2020 - by Patriarka</br>
             </p>
@@ -76,9 +99,8 @@
 
             </div>
 
-        </footer>
-    </div>
-
+        </footer> 
+    <div>
 </body>
 
 </html>
